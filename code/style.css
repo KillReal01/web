@@ -25,10 +25,15 @@ body {
 }
 
 .main {
-    background: #FFA500;
+    background: #191970;
+    color: #FFFFFF;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.footer{
+    /*background: #FFFFFF;*/
 }
 
 
