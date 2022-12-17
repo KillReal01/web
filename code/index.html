@@ -9,32 +9,34 @@
 </head>
 
 <body onload="currentSlide(1)">
-    
+
     <div class="header">
-        <img src="images/logo.png" width=100px>
-        <a href="cinemas.html"><button>Кинотеатры</button></a>
-        <a href="films.html"><button>Фильмы</button></a>
-        <a href="news.html"><button>Новости</button></a>
-        <a href="sales.html"><button>Акции</button></a>
+        <ul class="menu">
+            <li><img class="logo" src="images/logo.png"></li>
+            <li><a href="cinemas.html"><button>Кинотеатры</button></a></li>
+            <li><a href="films.html"><button>Фильмы</button></a></li>
+            <li><a href="news.html"><button>Новости</button></a></li>
+            <li><a href="sales.html"><button>Акции</button></a></li>
+        </ul>
     </div>
-    
+
     <div class="main">
         <div class="slideshow-container">
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
-                <img src="images/1.jpg" width=200px>
-                <div class="text">Caption One</div>
+                <img src="images/1.jpg">
+                <div class="text">Название + описание</div>
             </div>
 
             <div class="mySlides fade">
-                <img src="images/2.jpg" width=200px>
-                <div class="text">Caption Two</div>
+                <img src="images/2.jpg">
+                <div class="text">Название + описание</div>
             </div>
 
             <div class="mySlides fade">
-                <img src="images/3.jpg" width=200px>
-                <div class="text">Caption Three</div>
+                <img src="images/3.jpg">
+                <div class="text">Название + описание</div>
             </div>
 
             <!-- Next and previous buttons -->
@@ -49,13 +51,23 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
+
+        <div class="text">
+            <h2>Сегодня в кино</h2>
+            Список фильмов
+        </div>
+        <div class="text">
+            <h2>Скоро в кино</h2>
+            Список фильмов
+        </div>
+
     </div>
-    
+
     <div class="footer">
         <p>Наш телефон: +7-999-999-99-99</p>
         <p>Наша почта: kino@mail.ru</p>
     </div>
-    
+
 </body>
 
 </html>

@@ -10,28 +10,26 @@
 
 <body>
     <div class="header">
-        <a href="index.html"><img src="images/logo.png" width=100px></a>
-        <a href="cinemas.html"><button>Кинотеатры</button></a>
-        <a href="films.html"><button>Фильмы</button></a>
-        <a href="news.html"><button>Новости</button></a>
-        <a href="sales.html"><button>Акции</button></a>
+        <ul class="menu">
+            <li><a href="index.html"><img class="logo" src="images/logo.png" width=100px></a></li>
+            <li><a href="cinemas.html"><button>Кинотеатры</button></a></li>
+            <li><a href="films.html"><button>Фильмы</button></a></li>
+            <li><a href="news.html"><button>Новости</button></a></li>
+            <li> <a href="sales.html"><button>Акции</button></a></li>
+        </ul>
     </div>
     <div class="main">
-        Кинотеатры
+        <h1>Кинотеатры Санкт-Петербурга</h1>
 
-        <div style="position:relative;overflow:hidden;">
+        <div class="map_wrapper">
+            <iframe src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=true&amp;um=constructor%3A03182cad551257ad03bb471421b3d57abf02c8622780af19ae70c143cac6ccc1" frameborder="0" allowfullscreen="true" width="100%" height="600px" style="display: block;"></iframe>
             
-            <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a>
-            
-            <a href="https://yandex.ru/maps/2/saint-petersburg/stops/station__9805910/?ll=30.258547%2C59.977167&tab=overview&utm_medium=mapframe&utm_source=maps&z=13.58" style="color:#eee;font-size:12px;position:absolute;top:14px;">
-                Старая Деревня — Яндекс Карты
-            </a>
-
-            <iframe src="https://yandex.ru/map-widget/v1/-/CCUnBHRXhA" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
-            </iframe>
-  
         </div>
-
+        
+        <div class="cinema_list_wrapper">
+            Список кинотеатров
+        </div>
+        
     </div>
     <div class="footer">
         <p>Наш телефон: +7-999-999-99-99</p>
