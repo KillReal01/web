@@ -2,16 +2,10 @@ var slideIndex = 0;
 var delay = 4000;
 showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-    //sleep(delay);
-}
-
 // Thumbnail image controls
 function currentSlide(n) {
     showSlides(slideIndex = n);
-    //sleep(delay);
+    sleep(delay);
 }
 
 function showSlides() {
