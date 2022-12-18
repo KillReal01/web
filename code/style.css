@@ -160,10 +160,14 @@ body {
     background-color: #fff;
 }
 
+.menu:hover {
+    color: aqua;
+}
+
 .menu a {
     color: #fff;
     text-decoration: none;
-    font-family: fantasy;
+    font-family: sans-serif;
 }
 
 .image-radius {
