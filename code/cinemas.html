@@ -9,41 +9,50 @@
 </head>
 
 <body>
-    <div class="header">
-        <ul class="menu">
-            <li><a href="index.html"><img class="logo" src="images/logo.png" width=100px></a></li>
-            <li><a href="cinemas.html"><button>Кинотеатры</button></a></li>
-            <li><a href="films.html"><button>Фильмы</button></a></li>
-            <li><a href="news.html"><button>Новости</button></a></li>
-            <li><a href="sales.html"><button>Акции</button></a></li>
-        </ul>
-    </div>
+    
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" width="60" height="60px" class="image-radius"/>
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="active"><a href="cinemas.html">Кинотеатры</a></li>
+                <li><a href="films.html">Фильмы</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li> <a href="sales.html">Акции</a></li>
+            </ul>
+        </div>
+    </header>
+    
     <div class="main">
         <h1>Кинотеатры Санкт-Петербурга</h1>
 
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A70b7535e87f99d1598dbc88b2736da20ab52d5f6c53dfba361b052c3e01c6758&amp;source=constructor" width="800" height="600" frameborder="0">
-        </iframe>
-
-        <div class="cinema_list_wrapper">
-            <h2>Список кинотеатров</h2>
-            <ul class="cinema_list">
-                <li>Кинотеатр 1</li>
-                <li>Кинотеатр 2</li>
-                <li>Кинотеатр 3</li>
-                <li>Кинотеатр 4</li>
-                <li>Кинотеатр 5</li>
-                <li>Кинотеатр 6</li>
-                <li>Кинотеатр 7</li>
-                <li>Кинотеатр 8</li>
-                <li>Кинотеатр 9</li>
-                <li>Кинотеатр 10</li>
-            </ul>
+        <div class="map_wrapper">
+            <iframe src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=true&amp;um=constructor%3A03182cad551257ad03bb471421b3d57abf02c8622780af19ae70c143cac6ccc1" frameborder="0" allowfullscreen="true" width="100%" height="600px" style="display: block;"></iframe>
+            
         </div>
+        
+        <div class="cinema_list_wrapper">
+            Список кинотеатров
+        </div>
+        
     </div>
-    <div class="footer">
-        <p>Наш телефон: +7-999-999-99-99</p>
-        <p>Наша почта: kino@mail.ru</p>
-    </div>
+    
+    <footer>
+        <ul class="social">
+            <li><a href="#"><ion-icon name="call-outline"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+    </footer>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
 </body>
 
 </html>

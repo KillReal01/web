@@ -10,15 +10,21 @@
 
 <body onload="currentSlide(1)">
 
-    <div class="header">
-        <ul class="menu">
-            <li><img class="logo" src="images/logo.png"></li>
-            <li><a href="cinemas.html"><button>Кинотеатры</button></a></li>
-            <li><a href="films.html"><button>Фильмы</button></a></li>
-            <li><a href="news.html"><button>Новости</button></a></li>
-            <li><a href="sales.html"><button>Акции</button></a></li>
-        </ul>
-    </div>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" width="60" height="60px" class="image-radius"/>
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="cinemas.html">Кинотеатры</a></li>
+                <li><a href="films.html">Фильмы</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li> <a href="sales.html">Акции</a></li>
+            </ul>
+        </div>
+    </header>
 
     <div class="main">
         <div class="slideshow-container">
@@ -62,12 +68,20 @@
         </div>
 
     </div>
-
-    <div class="footer">
-        <p>Наш телефон: +7-999-999-99-99</p>
-        <p>Наша почта: kino@mail.ru</p>
-    </div>
-
+    
+    <footer>
+        <ul class="social">
+            <li><a href="#"><ion-icon name="call-outline"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+    </footer>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
 </body>
 
 </html>
