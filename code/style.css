@@ -212,3 +212,32 @@ footer{
     display: inline-block;
     transition: 0.5s;
 }
+
+
+
+
+.film_wrapper {
+    list-style-position: inside;
+    -webkit-column-count: 2;
+    column-count: 2;
+    list-style-type: decimal;
+}
+
+.sale_wrapper_1,
+.sale_wrapper_2 {
+    min-width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: inline;
+    overflow-x: auto;
+}
+
+.sale_wrapper_1::-webkit-scrollbar,
+.sale_wrapper_2::-webkit-scrollbar {
+    display: none;
+}
+
+.block_1 {
+    min-width: 200px;
+    margin: 5px;
+}
