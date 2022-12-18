@@ -83,7 +83,11 @@ insert into sessions(
 select * from cinemas;
 
 --выборка акций
-select * from sales;
+select * from sales
+where is_partner = false;
+
+select * from sales
+where is_partner = true;
 
 --выборка новостей
 select * from news;
