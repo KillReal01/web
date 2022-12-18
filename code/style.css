@@ -115,6 +115,8 @@ body {
     justify-content: flex-start;
     align-items: center;
     background: black;
+    width: window.devicePixelRatio;
+    height: 120px;
 }
 
 .menu {
@@ -144,7 +146,8 @@ body {
 }
 
 .logo {
-    margin-right: 180px;
+    margin-left: 20px;
+    margin-right: 160px;
 }
 
 .menu a,
