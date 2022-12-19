@@ -12,18 +12,18 @@
 }
 
 img {
-    max-width: 1200px; 
+    max-width: 1200px;
 }
 
-.logo{
+.logo {
     border-radius: 50%;
     max-width: 100px;
 }
 
 
 body {
-    background: -webkit-linear-gradient(90deg, #32127a,#e0218a);
-    background: linear-gradient(90deg, #32127a,#e0218a);
+    background: -webkit-linear-gradient(90deg, #32127a, #e0218a);
+    background: linear-gradient(90deg, #32127a, #e0218a);
 }
 
 .main {
@@ -134,11 +134,11 @@ body {
 }
 
 .menu li {
-  margin-right: 10%;
+    margin-right: 10%;
 }
 
 .menu li:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .logo {
@@ -147,7 +147,7 @@ body {
 }
 
 .menu a,
-.menu .active {  
+.menu .active {
     display: block;
     padding: 0px 5px;
     text-transform: uppercase;
@@ -178,16 +178,19 @@ body {
     border-radius: 50%;
 }
 
-footer{
-    position: relative;/*относительное позиционирование*/
+footer {
+    position: relative;
+    /*относительное позиционирование*/
     width: 100%;
-    padding: 20px 50px;/*поля для контента*/
+    padding: 20px 50px;
+    /*поля для контента*/
     background: black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 100px;/*отступ сверху*/
+    margin-top: 100px;
+    /*отступ сверху*/
 }
 
 .social {
@@ -269,10 +272,12 @@ iframe {
     margin-left: 10%;
 }
 
-.cinema_list_wrapper ul { 
-    width: 100px; /* ширина, которая вам нужна */ 
-    height: 200px; /* высота, которая вам нужна */ 
-    overflow-x: hidden; 
+.cinema_list_wrapper ul {
+    width: 100px;
+    /* ширина, которая вам нужна */
+    height: 200px;
+    /* высота, которая вам нужна */
+    overflow-x: hidden;
     overflow-y: scroll;
     min-width: 60%;
     list-style-type: none;
@@ -282,13 +287,23 @@ iframe {
     display: flex;
     flex-direction: row;
     font-size: 15px;
-    margin-left: 15%;;
-    margin-right: 15%;
+    justify-content: center;
+}
+
+h2 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .news_block {
-    min-width: 40%;
-    padding-top: 5%;
-    padding-right: 15%;
+    border-radius: 10%;
+    border: solid;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    padding-right: 3%;
+    margin: 3%;
     font-size: 18px;
 }
