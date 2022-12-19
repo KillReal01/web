@@ -218,6 +218,21 @@ footer{
     -webkit-column-count: 2;
     column-count: 2;
     list-style-type: decimal;
+    margin-top: 3%;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+.film_block {
+    margin-left: 30%;
+}
+
+.film_block film_block_text {
+    float: right;
+    flex: auto;
+    flex-direction: column;
 }
 
 .sale_wrapper_1,
