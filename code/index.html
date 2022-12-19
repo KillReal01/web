@@ -8,12 +8,12 @@
     <script src="script.js"></script>
 </head>
 
-<body onload="currentSlide(1)">
+<body onload="showSlides(1)">
 
     <header class="header">
         <div class="logo">
             <a href="index.html">
-                <img src="images/logo.png" width="60" height="60px" class="image-radius"/>
+                <img src="images/logo.png" width="60" height="60px" class="image-radius" />
             </a>
         </div>
         <div class="menu">
@@ -26,63 +26,47 @@
         </div>
     </header>
 
-    <div class="main">
-        <div class="slideshow-container">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <img src="images/1.jpg">
-                <div class="text">Название + описание</div>
-            </div>
-
-            <div class="mySlides fade">
-                <img src="images/2.jpg">
-                <div class="text">Название + описание</div>
-            </div>
-
-            <div class="mySlides fade">
-                <img src="images/3.jpg">
-                <div class="text">Название + описание</div>
-            </div>
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="slider">
+        <!-- The first slide -->
+        <div class="item">
+            <img src="images/1.jpg">
         </div>
-        <br>
-
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+        <!-- The second slide -->
+        <div class="item">
+            <img src="images/2.jpg">
         </div>
-
-        <div class="list_film">
-            <h2>Сегодня в кино</h2>
-            Список фильмов
-            
+        <!-- The third slide -->
+        <div class="item">
+            <img src="images/3.jpg">
         </div>
-        <div class="list_film">
-            <h2>Скоро в кино</h2>
-            Список фильмов
-        </div>
-
+        <!-- Arrow buttons -->
+        <a class="previous" onclick="previousSlide()">&#10094;</a>
+        <a class="next" onclick="nextSlide()">&#10095;</a>
     </div>
-    
+
     <footer>
         <ul class="social">
-            <li><a href="#"><ion-icon name="call-outline"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#">
+                    <ion-icon name="call-outline"></ion-icon>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
         </ul>
     </footer>
-    
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
+
 </body>
 
 </html>

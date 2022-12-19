@@ -4,22 +4,10 @@
     background: rgba(255, 255, 255, 0);
 }
 
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1200px;
-    position: relative;
-    margin: auto;
-}
-
-img {
-    max-width: 1200px;
-}
-
 .logo {
     border-radius: 50%;
     max-width: 100px;
 }
-
 
 body {
     background: -webkit-linear-gradient(90deg, #32127a, #e0218a);
@@ -32,81 +20,6 @@ body {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-
-/*Fading animation*/
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
 }
 
 .header {
@@ -213,9 +126,6 @@ footer {
     transition: 0.5s;
 }
 
-
-
-
 .film_wrapper {
     list-style-position: inside;
     -webkit-column-count: 2;
@@ -235,7 +145,6 @@ p {
     margin-bottom: 5%;
     margin-right: 20%;
 }
-
 
 .sale_wrapper_1,
 .sale_wrapper_2 {
@@ -305,4 +214,72 @@ h2 {
     padding-right: 3%;
     margin: 3%;
     font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+/* The slider: */
+.slider{
+    max-width: 60%;
+    /* The position of the element is set relative to its original position: */
+    position: relative;
+    /* Center horizontally: */
+    margin: auto;
+    height: 60%;
+    margin-top: 5%;
+}
+/* The picture is scaled in relation to the parent element: */
+.slider .item img {
+    /* The element is resized to fill the block and maintain proportions: */
+    object-fit: cover;
+    width: 100%;
+    height: 60%;
+}
+/* Back and forward buttons: */
+.slider .previous, .slider .next {
+    /* Adds an icon to the cursor when it is over the button: */
+    cursor: pointer;
+    /* The position of the element is set relative to the borders of the browser: */
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    /* Styling the buttons themselves: */
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    /* Background fading on hover: */
+    transition: 0.6s ease;
+    /* Rounding the borders: */
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* When you hover over the buttons, add the background of the buttons: */
+.slider .previous:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* Slide animation: */
+.slider .item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    /* Set and change the transparency: */
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
 }
