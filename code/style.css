@@ -229,14 +229,13 @@ p {
 }
 
 .film_block {
-    margin-left: 30%;
+    -webkit-column-count: 2;
+    column-count: 2;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    margin-right: 20%;
 }
 
-.film_block film_block_text {
-    float: right;
-    flex: auto;
-    flex-direction: column;
-}
 
 .sale_wrapper_1,
 .sale_wrapper_2 {
