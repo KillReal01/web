@@ -6,7 +6,10 @@
 
 .logo {
     border-radius: 50%;
-    max-width: 100px;
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+    margin-right: 160px;
 }
 
 body {
@@ -22,7 +25,7 @@ body {
     margin-right: auto;
 }
 
-.header {
+header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -37,32 +40,22 @@ body {
 }
 
 .menu ul {
-    display: flex;
-    flex-flow: row nowrap;
     margin: 0;
     padding: 0;
     font-size: 18px;
     line-height: 18px;
     list-style: none;
-}
 
-.menu li {
-    margin-right: 10%;
-}
-
-.menu li:last-child {
-    margin-right: 0;
-}
-
-.logo {
-    margin-left: 20px;
-    margin-right: 160px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-right: 15%;
 }
 
 .menu a,
 .menu .active {
     display: block;
-    padding: 0px 5px;
+    #padding: 0px 5px;
     text-transform: uppercase;
     letter-spacing: .27em;
     color: #000;
@@ -73,10 +66,6 @@ body {
     background-color: #000;
 }
 
-.menu:hover {
-    color: aqua;
-}
-
 .menu a {
     padding: 8px 10px;
     color: #fff;
@@ -85,11 +74,6 @@ body {
     font-weight: bold;
 }
 
-.image-radius {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-}
 
 footer {
     position: relative;
@@ -128,10 +112,21 @@ footer {
 
 .film_wrapper {
     list-style-position: inside;
-    -webkit-column-count: 2;
-    column-count: 2;
+    -webkit-column-count: 3;
+    column-count: 3;
     list-style-type: decimal;
     margin-top: 3%;
+}
+
+.wrapper {
+    min-height: 100px;
+    display: flex;
+    flex-direction: inline;
+    overflow-x: auto;
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
 }
 
 p {
@@ -139,15 +134,12 @@ p {
 }
 
 .film_block {
-    -webkit-column-count: 2;
-    column-count: 2;
-    margin-left: 20%;
+    margin-left: 3%;
     margin-bottom: 5%;
-    margin-right: 20%;
+    margin-right: 3%;
 }
 
-.sale_wrapper_1,
-.sale_wrapper_2 {
+.sale_wrapper {
     #max-width: 200px;
     min-height: 200px;
     display: flex;
@@ -155,40 +147,35 @@ p {
     overflow-x: auto;
 }
 
-.sale_wrapper_1::-webkit-scrollbar,
-.sale_wrapper_2::-webkit-scrollbar {
+.sale_wrapper::-webkit-scrollbar {
     display: none;
 }
 
-.block_1,
-.block_2 {
+
+.sale_block {
     #max-width: 20px;
     margin: 10px;
 }
 
-.cinema_list_wrapper {
-    color: white;
-    font-family: sans-serif;
-    float: right;
-    margin-right: 12%;
-}
-
-h1,
-iframe {
+h1 {
     color: white;
     font-family: sans-serif;
     margin-left: 10%;
 }
 
-.cinema_list_wrapper ul {
-    width: 100px;
-    /* ширина, которая вам нужна */
-    height: 200px;
-    /* высота, которая вам нужна */
+.cinema_wrapper {
+    list-style-position: inside;
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+
+.cinema_list {
+    min-width: 200px;
+    min-height: 200px;
     overflow-x: hidden;
     overflow-y: scroll;
-    min-width: 60%;
     list-style-type: none;
+    margin-left: 30%;
 }
 
 .container {
@@ -225,7 +212,7 @@ h2 {
 
 
 /* The slider: */
-.slider{
+.slider {
     max-width: 60%;
     /* The position of the element is set relative to its original position: */
     position: relative;
@@ -234,6 +221,7 @@ h2 {
     height: 60%;
     margin-top: 5%;
 }
+
 /* The picture is scaled in relation to the parent element: */
 .slider .item img {
     /* The element is resized to fill the block and maintain proportions: */
@@ -241,8 +229,10 @@ h2 {
     width: 100%;
     height: 60%;
 }
+
 /* Back and forward buttons: */
-.slider .previous, .slider .next {
+.slider .previous,
+.slider .next {
     /* Adds an icon to the cursor when it is over the button: */
     cursor: pointer;
     /* The position of the element is set relative to the borders of the browser: */
@@ -260,25 +250,31 @@ h2 {
     /* Rounding the borders: */
     border-radius: 0 3px 3px 0;
 }
+
 .slider .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
+
 /* When you hover over the buttons, add the background of the buttons: */
 .slider .previous:hover,
 .slider .next:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
+
 /* Slide animation: */
 .slider .item {
     animation-name: fade;
     animation-duration: 1.5s;
 }
+
 @keyframes fade {
+
     /* Set and change the transparency: */
     from {
         opacity: 0.4
     }
+
     to {
         opacity: 1
     }

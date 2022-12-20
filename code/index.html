@@ -10,40 +10,89 @@
 
 <body onload="showSlides(1)">
 
-    <header class="header">
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.png" width="60" height="60px" class="image-radius" />
-            </a>
-        </div>
+    <header>
+        <a href="index.html"><img class="logo" src="images/logo.png" /></a>
         <div class="menu">
             <ul>
-                <li><a href="cinemas.html">Кинотеатры</a></li>
+                <li class="active"><a href="cinemas.html">Кинотеатры</a></li>
                 <li><a href="films.html">Фильмы</a></li>
                 <li><a href="news.html">Новости</a></li>
-                <li> <a href="sales.html">Акции</a></li>
+                <li><a href="sales.html">Акции</a></li>
             </ul>
         </div>
     </header>
 
-    <div class="slider">
-        <!-- The first slide -->
-        <div class="item">
-            <img src="images/1.jpg">
+    <div class="main">
+        <div class="slider">
+            <!-- The first slide -->
+            <div class="item">
+                <img src="images/1.jpg">
+            </div>
+            <!-- The second slide -->
+            <div class="item">
+                <img src="images/2.jpg">
+            </div>
+            <!-- The third slide -->
+            <div class="item">
+                <img src="images/3.jpg">
+            </div>
+            <!-- Arrow buttons -->
+            <a class="previous" onclick="previousSlide()">&#10094;</a>
+            <a class="next" onclick="nextSlide()">&#10095;</a>
         </div>
-        <!-- The second slide -->
-        <div class="item">
-            <img src="images/2.jpg">
-        </div>
-        <!-- The third slide -->
-        <div class="item">
-            <img src="images/3.jpg">
-        </div>
-        <!-- Arrow buttons -->
-        <a class="previous" onclick="previousSlide()">&#10094;</a>
-        <a class="next" onclick="nextSlide()">&#10095;</a>
-    </div>
 
+
+        <h1>Сегодня в кино</h1>
+        <div class="wrapper">
+            <div class="film_block">
+                <img src="images/mira.jpg">
+                <div class="film_block_text">
+                    <p>Мира</p>
+                    <p>12+ Фантастика</p>
+                </div>
+            </div>
+            <div class="film_block">
+                <img src="images/masha.jpg">
+                <div class="film_block_text">
+                    <p>Маша и Медведь</p>
+                    <p>6+ Мультфильм</p>
+                </div>
+            </div>
+            <div class="film_block">
+                <img src="images/neposlushnik.jpg">
+                <div class="film_block_text">
+                    <p>Непослушник 2</p>
+                    <p>16+ Комедия</p>
+                </div>
+            </div>
+        </div>
+
+        <h1>Скоро в кино</h1>
+        <div class="wrapper">
+            <div class="film_block">
+                <img src="images/mira.jpg">
+                <div class="film_block_text">
+                    <p>Мира</p>
+                    <p>12+ Фантастика</p>
+                </div>
+            </div>
+            <div class="film_block">
+                <img src="images/masha.jpg">
+                <div class="film_block_text">
+                    <p>Маша и Медведь</p>
+                    <p>6+ Мультфильм</p>
+                </div>
+            </div>
+            <div class="film_block">
+                <img src="images/neposlushnik.jpg">
+                <div class="film_block_text">
+                    <p>Непослушник 2</p>
+                    <p>16+ Комедия</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <footer>
         <ul class="social">
             <li><a href="#">

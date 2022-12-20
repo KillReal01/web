@@ -9,31 +9,24 @@
 </head>
 
 <body>
-    
-    <header class="header">
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.png" width="60" height="60px" class="image-radius"/>
-            </a>
-        </div>
+
+    <header>
+        <a href="index.html"><img class="logo" src="images/logo.png" /></a>
         <div class="menu">
             <ul>
                 <li class="active"><a href="cinemas.html">Кинотеатры</a></li>
                 <li><a href="films.html">Фильмы</a></li>
                 <li><a href="news.html">Новости</a></li>
-                <li> <a href="sales.html">Акции</a></li>
+                <li><a href="sales.html">Акции</a></li>
             </ul>
         </div>
     </header>
-    
-    <div class="main_cinemas">
+
+    <div class="main">
         <h1>Кинотеатры Санкт-Петербурга</h1>
-
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A70b7535e87f99d1598dbc88b2736da20ab52d5f6c53dfba361b052c3e01c6758&amp;source=constructor" width="800" height="600" frameborder="0">
-        </iframe>
-
-        <div class="cinema_list_wrapper">
-            <h2>Список кинотеатров</h2>
+        <div class="cinema_wrapper">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A70b7535e87f99d1598dbc88b2736da20ab52d5f6c53dfba361b052c3e01c6758&amp;source=constructor" width="800" height="600" frameborder="0">
+            </iframe>
             <ul class="cinema_list">
                 <li>Кинотеатр 1</li>
                 <li>Кинотеатр 2</li>
@@ -46,23 +39,33 @@
                 <li>Кинотеатр 9</li>
                 <li>Кинотеатр 10</li>
             </ul>
+
         </div>
-        
     </div>
-    
+
     <footer>
         <ul class="social">
-            <li><a href="#"><ion-icon name="call-outline"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#">
+                    <ion-icon name="call-outline"></ion-icon>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li><a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
         </ul>
     </footer>
-    
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
+
 </body>
 
 </html>
