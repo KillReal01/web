@@ -26,6 +26,26 @@ body {
     font-family: sans-serif;
 }
 
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: flex-start;
+}
+
+.right_img{
+    margin: 1%;
+    transform: rotate(10deg);
+    width: 17%;
+    margin-top: 4%;
+}
+
+.left_img{
+    margin: 1%;
+    transform: rotate(-10deg);
+    width: 15%;
+}
+
 header {
     display: flex;
     flex-flow: row nowrap;
@@ -127,10 +147,16 @@ footer {
     display: none;
 }
 
+.text_cinema,
 .text {
     font-size: 14px;
     color: antiquewhite;
     text-align: center;
+}
+
+.text_cinema{
+    text-align: left;
+    margin-left: 3%;
 }
 
 .film_block {
@@ -208,8 +234,11 @@ h2 {
     border-radius: 30px;
     border: solid;
     border-color: black;
-    border-width: 5px;
-    #background: #00BFFF;
+    border-width: 2px;
+    
+    background: -webkit-linear-gradient(90deg, #e0218a, #32127a);
+    background: linear-gradient(90deg, #e0218a, #32127a);
+    
     padding: 1%;
     margin-bottom: 2%;
     margin-left: 2%;
@@ -217,7 +246,19 @@ h2 {
     font-size: 18px;
 }
 
+.index_block{
+    overflow: scroll;
+    width: 40%;
+    max-height: 280px;
+    float:right;
+    margin-right: 6%;
+    text-overflow: ellipsis;
+}
 
+
+.index_block::-webkit-scrollbar {
+    display: none;
+}
 
 
 
@@ -227,10 +268,9 @@ h2 {
 
 /* The slider: */
 .slider {
-    max-width: 60%;
-    /* The position of the element is set relative to its original position: */
+    background: #32127a;
+    max-width: 1000px;
     position: relative;
-    /* Center horizontally: */
     margin: auto;
     height: 60%;
     margin-top: 5%;
@@ -240,7 +280,7 @@ h2 {
 .slider .item img {
     /* The element is resized to fill the block and maintain proportions: */
     object-fit: cover;
-    width: 100%;
+    width: 50%;
     height: 60%;
 }
 
@@ -281,6 +321,7 @@ h2 {
     animation-name: fade;
     animation-duration: 1.5s;
 }
+
 
 @keyframes fade {
 
